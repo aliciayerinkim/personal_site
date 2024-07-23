@@ -48,3 +48,22 @@ nav {
 .about-img-hpe img{
     width: 200px;
 }
+
+/* portfolio.html */
+.portfolio-heading{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(237, 157, 9);
+}
+
+.portfolio-subheading {
+    color: rgb(41, 29, 7);
+}
+
+.portfolio-content {
+    color: rgb(72, 49, 9);
+}
+
+.aa-image img{
+    width: 300px;
+}
