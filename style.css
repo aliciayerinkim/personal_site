@@ -41,14 +41,6 @@ nav {
     color: rgb(72, 49, 9);
 }
 
-.about-img-tamu img{
-    width: 100px;
-}
-
-.about-img-hpe img{
-    width: 200px;
-}
-
 /* portfolio.html */
 .portfolio-heading{
     font-size: 50px;
@@ -62,6 +54,15 @@ nav {
 
 .portfolio-content {
     color: rgb(72, 49, 9);
+}
+
+/* images */
+.tamu-img img{
+    width: 100px;
+}
+
+.hpe-img img{
+    width: 200px;
 }
 
 .aa-image img{
