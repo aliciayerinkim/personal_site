@@ -26,3 +26,25 @@ nav {
     color: rgb(92, 58, 0);
 }
 
+/* about.html */
+.about-heading {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(237, 157, 9);
+}
+
+.about-subheading {
+    color: rgb(41, 29, 7);
+}
+
+.about-content {
+    color: rgb(72, 49, 9);
+}
+
+.about-img-tamu img{
+    width: 100px;
+}
+
+.about-img-hpe img{
+    width: 200px;
+}
