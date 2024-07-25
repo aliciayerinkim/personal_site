@@ -1,10 +1,19 @@
 body {
+    margin: 0;
     background-color: rgb(245, 237, 220);
 }
 
-nav {
+.nav-header {
+    display: flex;
     position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px; 
+    background-color: rgba(177, 153, 108, 0.462);
+    z-index: 50;
+    color: rgb(34, 16, 5);
     font-size: 18px;
+
 }
 
 /* index.html */
@@ -14,6 +23,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; 
+    padding-top: 50px;
 }
 
 .index-heading {
@@ -32,6 +42,7 @@ nav {
     font-size: 50px;
     text-align: center;
     color: rgb(237, 157, 9);
+    padding-top: 50px;
 }
 
 .about-subheading {
@@ -47,6 +58,7 @@ nav {
     font-size: 50px;
     text-align: center;
     color: rgb(237, 157, 9);
+    padding-top: 50px;
 }
 
 .portfolio-subheading {
@@ -68,4 +80,16 @@ nav {
 
 .aa-image img{
     width: 300px;
+}
+
+/* contact.html */
+.contact-heading { 
+    font-size: 50px;
+    text-align: center;
+    color: rgb(237, 157, 9);
+    padding-top: 50px;
+}
+
+.form{
+    color: rgb(41, 29, 7);
 }
