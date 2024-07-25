@@ -1,10 +1,30 @@
 body {
+    margin: 0;
     background-color: rgb(245, 237, 220);
 }
 
-nav {
+.nav-header {
+    display: flex;
     position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px; 
+    background-color: rgb(218, 199, 163);
+    z-index: 50;
+    color: rgb(34, 16, 5);
     font-size: 18px;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: rgb(41, 29, 7);
+    padding: 10px; 
+    margin: 10px;
+    font-weight: bold;
+}
+
+section {
+    margin-left: 1.5vw;
 }
 
 /* index.html */
@@ -14,6 +34,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; 
+    padding-top: 50px;
 }
 
 .index-heading {
@@ -32,6 +53,7 @@ nav {
     font-size: 50px;
     text-align: center;
     color: rgb(237, 157, 9);
+    padding-top: 50px;
 }
 
 .about-subheading {
@@ -47,6 +69,7 @@ nav {
     font-size: 50px;
     text-align: center;
     color: rgb(237, 157, 9);
+    padding-top: 50px;
 }
 
 .portfolio-subheading {
@@ -68,4 +91,103 @@ nav {
 
 .aa-image img{
     width: 300px;
+}
+
+.skills-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    overflow-x: auto; 
+    
+}
+
+.node-img img,
+.react-img img,
+.sql-img img {
+    width: 140px;
+    height: auto;
+}
+
+/* contact.html */
+.contact-heading { 
+    font-size: 50px;
+    text-align: center;
+    color: rgb(237, 157, 9);
+    padding-top: 50px;
+}
+
+.form{
+    color: rgb(41, 29, 7);
+}
+
+.form-elements label {
+    display: inline-block; 
+    width: 150px;
+    margin-right: 20px; 
+    vertical-align: top; 
+}
+
+.form-elements input,
+.form-elements textarea {
+    width: 70%; 
+    padding: 8px;
+}
+
+.form-elements {
+    color: rgb(72, 49, 9);
+}
+
+.form-elements input[type="submit"] {
+    background-color: rgb(244, 195, 104);;
+    color: rgb(41, 29, 7); 
+    cursor: pointer; 
+    width: 80px;
+}
+
+/* success.html */
+.success-heading {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    text-align: center;
+    color: rgb(41, 29, 7);
+    z-index: 10;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    height: 55vw;
+    background-color: rgb(237, 157, 9);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .success-body {
+        background-color: rgb(237, 157, 9);
+    }
+    .circle {
+        border-radius: 0%;
+        width: 70%;
+        height: 100%;
+        background-color: rgb(245, 237, 220);
+    }
+    .mid-rect {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:70vw;
+        height: 100vw;
+        background-color: transparent;
+        border: 30px solid black;
+        z-index: 5;
+    }
 }
