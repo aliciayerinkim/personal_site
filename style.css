@@ -85,6 +85,22 @@ section {
     width: 300px;
 }
 
+.skills-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    overflow-x: auto; 
+    
+}
+
+.node-img img,
+.react-img img,
+.sql-img img {
+    width: 140px;
+    height: auto;
+}
+
 /* contact.html */
 .contact-heading { 
     font-size: 50px;
@@ -124,10 +140,10 @@ section {
 /* success.html */
 .success-heading {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 7vw;
     text-align: center;
     color: rgb(41, 29, 7);
     z-index: 10;
@@ -138,9 +154,32 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
-    height: 50vw;
+    width: 55vw;
+    height: 55vw;
     background-color: rgb(237, 157, 9);
     border-radius: 50%;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .success-body {
+        background-color: rgb(237, 157, 9);
+    }
+    .circle {
+        border-radius: 0%;
+        width: 70%;
+        height: 100%;
+        background-color: rgb(245, 237, 220);
+    }
+    .mid-rect {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:70vw;
+        height: 100vw;
+        background-color: transparent;
+        border: 30px solid black;
+        z-index: 5;
+    }
 }
